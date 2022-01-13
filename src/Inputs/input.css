@@ -3,6 +3,7 @@
   outline: none;
   border: 1px solid rgb(175, 174, 174);
   border-radius: 12px;
+  background-color: none;
 }
 
 .label {
@@ -29,6 +30,10 @@ span {
   padding: 3px;
   font-size: 12px;
   display: none;
+}
+
+input:invalid[focused="true"] {
+  border: 1px solid red;
 }
 
 input:invalid[focused="true"] ~ span {
